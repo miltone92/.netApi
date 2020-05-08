@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{E7787E80-178F-40FA-9C79-601C4C3ED042}|Default">
+  <MonoDevelop.Ide.ItemProperties.BbgApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BbgApi/Models/UserModel.cs">
+    <Files>
+      <File FileName="BbgApi/Controllers/WeatherForecastController.cs" Line="30" Column="33" />
+      <File FileName="BbgApi/WeatherForecast.cs" />
+      <File FileName="BbgApi/Models/MongoCRUD.cs" Line="7" Column="97" />
+      <File FileName="BbgApi/Controllers/UserController.cs" Line="22" Column="1" NotebookId="1" />
+      <File FileName="BbgApi/Models/UserModel.cs" Line="1" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BbgApi" expanded="True">
+            <Node name="BbgApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="UserModel.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
