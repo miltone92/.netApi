@@ -1,13 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
-/*
- * Purpose: Allows data base connectivity
- * DB URL: "mongodb+srv://milton:milton@authordb-m9enp.mongodb.net/test?retryWrites=true&w=majority"
- * mongodb+srv://milton:<password>@bbgcluster-m9enp.mongodb.net/test?retryWrites=true&w=majority
- */
 
-namespace BbgApi.Models
+namespace BbgApi.DataAccess
 {
     public class MongoCRUD
     {
@@ -26,6 +23,15 @@ namespace BbgApi.Models
         {
             var collection = db.GetCollection<T>(table);
             collection.InsertOne(record);
+
+        }
+
+        //get
+        public List<T> Get<T>(string table)
+        {
+            var collection = db.GetCollection<T>(table);
+            return collection.Find(new BsonDocument()).ToList();
+
 
         }
     }

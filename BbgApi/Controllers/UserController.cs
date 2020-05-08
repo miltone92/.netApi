@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 using BbgApi.Models;
-
+using BbgApi.DataAccess;
 
 namespace BbgApi.Controllers
 {
@@ -15,9 +15,12 @@ namespace BbgApi.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<UserModel> Get()
         {
-            return new string[] { "value1", "value2" };
+            MongoCRUD db = new MongoCRUD("BbgCluster");
+            var results = db.Get<UserModel>("Users");
+            return results;
+         
         }
 
         // GET api/values/5
